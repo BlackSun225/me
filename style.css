@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("images/backme.svg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Marcellus", serif;
+}
+main {
+  background: rgba(233, 68, 7, 0.103);
+  box-shadow: 0px 3px 15px rgb(245, 187, 166);
+  padding: 0 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(253, 85, 24, 0.24);
+  position: relative;
+}
+h1, h2 {
+  margin: 1rem 0;
+  text-align: center;
+  color: rgb(228, 105, 18);
+}
+p {
+  color:forestgreen;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+li {
+  color:cornflowerblue;
+}
+a {
+  text-decoration: none;
+  color: orangered;
+}
+a:hover {
+  color: black;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 750px) {
+  body {
+    min-height: 100vh;
+  }
+  main {
+    width: max(80%, 600px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    margin: 1rem 0;
+  }
+  ul li:not(:first-child) {
+    margin-left: 1.5rem;
+  }
+}
+
+@media only screen and (max-width:749px) {
+  body {
+    padding: 1.5rem 0;
+  }
+  main {
+    width: 90%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  ul {
+    flex-direction: column;
+  }
+  ul li:not(:last-child) {
+    margin-bottom: 1rem;
+  }  
+}
